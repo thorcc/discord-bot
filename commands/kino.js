@@ -14,7 +14,7 @@ const getVegaToday = async () => {
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('kino')
-		.setDescription('Henter ukens kinoprogram'),
+		.setDescription('Henter dagens kinoprogram'),
 	async execute(interaction) {
         const program = await getVegaToday();
 		await interaction.reply(program);
